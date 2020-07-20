@@ -39,4 +39,4 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Instructions
 
-Follow the instructions in `Tennis.ipynb` to get started with training and testing your own agent!  
+Follow the instructions in `Tennis.ipynb` to get started with training and testing your own agent!  (Models: checkpoint_actor.pth and checkpoint_critic.pth where trained for obtaining Report.pdf results)
