@@ -78,7 +78,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 ### Instructions (how to run the code)
 
-## Method 1: Using script `train.py` and `eval.py`
+#### Method 1: Using script `train.py` and `eval.py`
 
 The agent can be trained directly from the command line by specifying the number of episode and if the training must stop just when the agent reaches 0.5 point of average during the last 100 episodes. Note that by default, the number of episodes is 10000 and early stop is set to false.
 
@@ -91,11 +91,11 @@ For testing, you can use `eval.py` script as
 $ python eval.py
 ```
 
-## Method 2: Using jupyter notebook
+#### Method 2: Using jupyter notebook
 
 To use this method please, follow the jupyter notebook `Tennis.ipynb` to get started with the training and testing of the agent.
 
-## Common
+#### Common
 
 To keep a history of the trained models, both `train.py` and `Tenis.ipynb` generate checkpoint model files called:
 ```
