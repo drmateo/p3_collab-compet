@@ -76,6 +76,35 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
 
-### Instructions
+### Instructions (how to run the code)
 
-Follow the instructions in `Tennis.ipynb` to get started with training and testing your own agent!  (Models: checkpoint_actor.pth and checkpoint_critic.pth where trained for obtaining Report.pdf results)
+## Method 1: Using script `train.py` and `eval.py`
+
+The agent can be trained directly from the command line by specifying the number of episode and if the training must stop just when the agent reaches 0.5 point of average during the last 100 episodes. Note that by default, the number of episodes is 10000 and early stop is set to false.
+
+```
+$ python train.py --num_eps=2000 --early_stop=True
+```
+
+For testing, you can use `eval.py` script as
+```
+$ python eval.py
+```
+
+## Method 2: Using jupyter notebook
+
+To use this method please, follow the jupyter notebook `Tennis.ipynb` to get started with the training and testing of the agent.
+
+## Common
+
+To keep a history of the trained models, both `train.py` and `Tenis.ipynb` generate checkpoint model files called:
+```
+checkpoint_model_epi_acc.pth
+```
+where model can be `actor` or `critic`, epi is a number pointing the number of episo in which is reach this checkpoint and acc is the score reached at that point.
+
+Note that if you want to use an specific checkpoint to test the agent yoou have to manually rename them as:
+```
+checkpoint_actor.pth
+checkpoint_critic.pth
+```
